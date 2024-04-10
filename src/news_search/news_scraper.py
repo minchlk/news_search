@@ -171,6 +171,7 @@ class NewsScraper:
         headline_str = " ".join(headlines)
         headline_doc = nlp(headline_str)
 
+        # Use spacy's NER capability
         named_entities = []
         for ent in headline_doc.ents:
             if ent.label_ in ["PERSON", "ORG", "GPE", "PER"]:
