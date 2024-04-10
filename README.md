@@ -37,5 +37,3 @@ like so:
 python cli.py "Example Search Query" en GoogleNewsBackend
 python cli.py <topic> <language> <backend>
 ```
-
-## ??? Profit?
