@@ -1,0 +1,41 @@
+[project]
+name = "news_search"
+version = "0.1"
+description = ""
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Laura Minch"}]
+dynamic = ["dependencies"]
+
+# This allows to use the dependencies specified in requirements.txt
+# One can also just list them here, but since requirements.txt was
+# explicitly requested, this works.
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+# Optional dependencies only used in development
+[project.optional-dependencies]
+dev = [
+	"isort",
+	"ruff",
+	"mypy",
+	"pylint",
+]
+
+
+[tool.isort]
+profile = "black"
+src_paths = ["src", "cli.py", "test"]
+length_sort = true
+
+[tool.pylint]
+max-line-length = 88
+disable = "C0301"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
