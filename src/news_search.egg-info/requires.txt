@@ -1,0 +1,10 @@
+spacy
+GoogleNews
+typer
+newsapi-python
+
+[dev]
+isort
+ruff
+mypy
+pylint

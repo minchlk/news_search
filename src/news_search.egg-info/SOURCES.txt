@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/news_search/__init__.py
+src/news_search/news_scraper.py
+src/news_search.egg-info/PKG-INFO
+src/news_search.egg-info/SOURCES.txt
+src/news_search.egg-info/dependency_links.txt
+src/news_search.egg-info/requires.txt
+src/news_search.egg-info/top_level.txt
+src/news_search/backends/__init__.py
+src/news_search/backends/google_news.py
+src/news_search/backends/news_api.py
+src/news_search/backends/news_backend.py

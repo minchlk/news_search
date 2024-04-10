@@ -1,0 +1,4 @@
+spacy
+GoogleNews
+typer
+newsapi-python
