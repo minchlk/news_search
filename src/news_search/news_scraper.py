@@ -109,7 +109,7 @@ class NewsScraper:
         Generate a summary from a list of article headlines.
 
         Args:
-            nlp: nlp: The spacy model
+            nlp: The spacy model
             stopwords : The spacy stopwords specific to the query language
             articles : A list of NewsArticle objects
 

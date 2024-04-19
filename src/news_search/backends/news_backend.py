@@ -32,7 +32,6 @@ class NewsBackend(metaclass=ABCMeta):
     """
 
     @staticmethod
-    @abstractmethod
     def get_required_args() -> Dict[str, str]:
         """
         Since classes might need arguments to be instantiated, they may
@@ -40,7 +39,6 @@ class NewsBackend(metaclass=ABCMeta):
         descriptions
         """
 
-    @abstractmethod
     def _fetch_for_topic(
         self,
         topic: str,

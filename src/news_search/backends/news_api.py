@@ -10,9 +10,6 @@ from news_search.backends.news_backend import Language, NewsArticle, NewsBackend
 class NewsApiBackend(NewsBackend):
     """
     Class to implement NewsApiClient to scrape recent news articles.
-
-    Initially tested with api.get_everything because we could specify a date, but
-    api.get_top_headlines only returns the most recent relevant articles.
     """
 
     def __init__(self, api_key: str):

@@ -9,9 +9,6 @@ from news_search.backends.news_backend import Language, NewsArticle, NewsBackend
 class GoogleNewsBackend(NewsBackend):
     """
     Class to implement GoogleNews API to scrape recent news articles.
-
-    Does not always return the max_num_articles, and certain functions are blocked,
-    which makes this the inferior of the two backends.
     """
 
     def __init__(self):
